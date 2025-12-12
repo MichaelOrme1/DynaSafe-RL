@@ -1,18 +1,35 @@
-This is the repository for DynaSafe-RL, a dynamic unlearning framework that enables real-time behavioural regulation of large language models without retraining or parameter access.
+# DynaSafe-RL: Dynamic LLM Unlearning Framework
 
-This repository is structured as follows:
+![Diagram of DynaSafe-RL's dynamic prompt optimization loop](architecture.png)
 
-Testing Code - all of the code for running models and carrying out tests. Requires Gemini API KEY.
+DynaSafe-RL is a novel framework designed for **real-time behavioural regulation of Large Language Models (LLMs)**.
 
-RL Models - the models that select each strategy, required for using DynaSafe-RL.
+Unlike traditional methods that require extensive retraining or parameter modification (knowledge editing/machine unlearning), DynaSafe-RL dynamically adjusts the model's safety and coherence via prompt optimization *at inference time*. This approach enables instant, adaptive control over LLM behavior, making it ideal for deployment in rapidly evolving environments.
 
-Comparison Code - creates visualisations and statistical tests of all of the methods.
+## 🚀 Key Features
 
-Results - full results obtained over the course of our experiments, required by the code in Comparison Code.
+* **Dynamic Control:** Regulates LLM behavior in real-time based on conversational context.
+* **Zero-Retraining:** Achieves unlearning effects without modifying the LLM's core parameters.
+* **Safety & Coherence Optimized:** Uses a Reinforcement Learning (RL) agent to select strategies that balance safety against output quality.
 
-Supplementary Material - contains reports detailing static methods and the Deep Eval Metrics used for the prompt rating.
+  
+![Dynasafe Results](avg performance.png)
 
-Prompts can be downloaded from https://huggingface.co/datasets/AnonymousSubmission1/Unsafe_Prompts.
 
+## 📁 Repository Structure
+
+| Directory | Purpose | Key Contents | Dependencies/Usage |
+| :--- | :--- | :--- | :--- |
+| **`Testing Code`** | Executes the DynaSafe-RL system, baseline methods, and safety evaluations. | Scripts for model invocation and metric calculation. | Requires a **Gemini API Key** to run the LLMs and DeepEval evaluation metrics. |
+| **`RL Models`** | Stores the trained policy models that select the optimal strategy for dynamic unlearning. | Checkpoints and configuration files for the RL agents. | Essential for utilizing DynaSafe-RL's core dynamic functionality. |
+| **`Comparison Code`** | Contains all analysis scripts used to generate publication-ready figures and statistical analysis. | Scripts for visualization, statistical tests (e.g., ANOVA, t-tests). | Requires the data stored in the `Results` directory. |
+| **`Results`** | The complete, raw, and aggregated experimental outcomes from all methods tested (DynaSafe-RL, static, and unaligned baselines). | CSV/JSON files containing safety scores, coherence scores, and generated prompts. | Required to run the analysis code in `Comparison Code`. |
+| **`Supplementary Material`** | Provides detailed auxiliary information, including static method definitions and metric documentation. | Reports detailing **static unlearning methods** and the **DeepEval Metrics** used for prompt rating. | Contains the full breakdown of the evaluation criteria (score mapping). |
+
+## 🔗 Dataset
+
+The dataset of unsafe prompts used for testing and training DynaSafe-RL can be accessed and downloaded here:
+
+> $\rightarrow$ [https://huggingface.co/datasets/AnonymousSubmission1/Unsafe\_Prompts](https://huggingface.co/datasets/AnonymousSubmission1/Unsafe_Prompts)
 
 
