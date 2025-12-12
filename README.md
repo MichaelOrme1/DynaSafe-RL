@@ -22,9 +22,9 @@ Unlike traditional methods that require extensive retraining or parameter modifi
 | :--- | :--- | :--- | :--- |
 | **`Testing Code`** | Executes the DynaSafe-RL system, baseline methods, and safety evaluations. | Scripts for model invocation and metric calculation. | Requires a **Gemini API Key** to run the LLMs and DeepEval evaluation metrics. |
 | **`RL Models`** | Stores the trained policy models that select the optimal strategy for dynamic unlearning. | Checkpoints and configuration files for the RL agents. | Essential for utilizing DynaSafe-RL's core dynamic functionality. |
-| **`Comparison Code`** | Contains all analysis scripts used to generate publication-ready figures and statistical analysis. | Scripts for visualization, statistical tests (e.g., ANOVA, t-tests). | Requires the data stored in the `Results` directory. |
-| **`Results`** | The complete, raw, and aggregated experimental outcomes from all methods tested (DynaSafe-RL, static, and unaligned baselines). | CSV/JSON files containing safety scores, coherence scores, and generated prompts. | Required to run the analysis code in `Comparison Code`. |
-| **`Supplementary Material`** | Provides detailed auxiliary information, including static method definitions and metric documentation. | Reports detailing **static unlearning methods** and the **DeepEval Metrics** used for prompt rating. | Contains the full breakdown of the evaluation criteria (score mapping). |
+| **`Comparison Code`** | Contains all analysis scripts used to generate figures and statistical analysis. | Scripts for visualization, statistical tests (e.g., ANOVA, t-tests). | Requires the data stored in the `Results` directory. |
+| **`Results`** | The complete, raw, and aggregated experimental outcomes from all methods tested (DynaSafe-RL, static, and unaligned baselines). | CSV files containing safety scores, quality scores, and generated prompts. | Required to run the analysis code in `Comparison Code`. |
+| **`Supplementary Material`** | Provides detailed auxiliary information, including static method definitions and metric documentation. | Reports detailing **static unlearning methods** and the **DeepEval Metrics** used for prompt rating. | Contains the full breakdown of the evaluation criteria and previous methods. |
 
 ## 🔗 Dataset
 
