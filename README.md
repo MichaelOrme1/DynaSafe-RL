@@ -13,7 +13,7 @@ Unlike traditional methods that require extensive retraining or parameter modifi
 * **Safety & Coherence Optimized:** Uses a Reinforcement Learning (RL) agent to select strategies that balance safety against output quality.
 
   
-![Dynasafe Results](avg performance.png)
+![Dynasafe Results](avg_performance.png)
 
 
 ## 📁 Repository Structure
