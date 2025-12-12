@@ -12,7 +12,7 @@ Results - full results obtained over the course of our experiments, required by 
 
 Supplementary Material - contains reports detailing static methods and the Deep Eval Metrics used for the prompt rating.
 
-Prompts - contains the unsafe prompts used for testing the models, required for model use.
+Prompts can be downloaded from https://huggingface.co/datasets/AnonymousSubmission1/Unsafe_Prompts.
 
 
 
