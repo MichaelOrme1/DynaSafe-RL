@@ -1,4 +1,4 @@
-# DynaSafe-RL: Dynamic LLM In Context-Unlearning Framework
+# DynaSafe-RL: Dynamic LLM In Context Unlearning Framework
 
 ![Diagram of DynaSafe-RL's dynamic prompt optimization loop](architecture.png)
 
