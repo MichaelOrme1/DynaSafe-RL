@@ -1,10 +1,10 @@
-# DynaSafe-RL: Dynamic LLM Unlearning Framework
+# DynaSafe-RL: Dynamic LLM In Context-Unlearning Framework
 
 ![Diagram of DynaSafe-RL's dynamic prompt optimization loop](architecture.png)
 
 DynaSafe-RL is a novel framework designed for **real-time behavioural regulation of Large Language Models (LLMs)**.
 
-Unlike traditional methods that require extensive retraining or parameter modification (knowledge editing/machine unlearning), DynaSafe-RL dynamically adjusts the model's safety and coherence via prompt optimization *at inference time*. This approach enables instant, adaptive control over LLM behavior, making it ideal for deployment in rapidly evolving environments.
+DynaSafe-RL dynamically adjusts the model's safety and coherence via prompt optimization *at inference time*. This approach enables instant, adaptive control over LLM behavior, making it ideal for deployment in rapidly evolving environments.
 
 ## 🚀 Key Features
 
